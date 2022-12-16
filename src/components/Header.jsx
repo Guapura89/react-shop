@@ -1,17 +1,18 @@
 // Images
 import menu_logo from '../assets/icons/icon_menu.svg';
 import logo from '../assets/logos/logo_yard_sale.svg';
+import shopping_cart from '../assets/icons/icon_shopping_cart.svg';
 
 import '../styles/header.css';
 
 const Header = () => {
     return (
-        <nav className='flex justify-between w-92 mx-auto px-5'>
+        <nav className='flex justify-between w-92 mx-auto px-8 h-[100px] min-w-[280px]'>
             
             <div className="navbar-left flex gap-12 items-center">
                 <img src={ logo } alt="logo" className="logo w-[130px]" />
 
-                <ul className='gap-3 hidden sm:flex text-slate-400'>
+                <ul className='gap-3 max-[820px]:hidden flex text-slate-400'>
                     <li >
                         <a href="/">All</a>
                     </li>
@@ -33,16 +34,16 @@ const Header = () => {
                 </ul>
             </div>
 
-            <div className="navbar-right">
-            <ul>
-                <li className="navbar-email">platzi@example.com</li>
-                <li className="navbar-shopping-cart">
-                <img src="./icons/icon_shopping_cart.svg" alt="shopping cart"/ >
-                <div>2</div>
-                </li>
-            </ul>
+            <div className="navbar-right items-center flex max-[640px]:hidden">
+                <ul className='flex gap-3'>
+                    <li className="navbar-email ">platzi@example.com</li>
+                    <li className="navbar-shopping-cart">
+                        <img src={ shopping_cart } alt="shopping cart relative"/ >
+                        <div className='absolute text-xs top-5 right-5 bg-green-300 rounded-full p-2 w-6 h-6 flex items-center justify-center'>2</div>
+                    </li>
+                </ul>
             </div>
-            <img src={ menu_logo } alt="menu" className="menu sm:hidden" />
+            <img src={ menu_logo } alt="menu" className="menu sm:hidden w-[30px] active:bg-slate-200 hover:cursor-pointer" />
         </nav>
     );
 }
