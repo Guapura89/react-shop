@@ -1,17 +1,21 @@
+// Images
+import logo from '../assets/logos/logo_yard_sale.svg'
+import email from '../assets/icons/email.svg'
+
 const RecoveryPassword = () => {
     return (
-        <div class="login w-full grid place-items-center text-center">
-            <div class="form-container">
-                <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo" />
-                <h1 class="title">Email has been sent!</h1>
-                <p class="subtitle">Please check your inbox for instructions on how to reset the password</p>
-                <div class="email-image">
-                    <img src="./icons/email.svg" alt="email" />
+        <div className="login w-full h-screen grid place-items-center text-center">
+            <div className="form-container w-48 sm:w-1/4">
+                <img src={logo} alt="logo" className="logo mx-auto my-3 w-full sm:w-1/2" />
+                <h1 className="title font-bold mb-1">Email has been sent!</h1>
+                <p className="subtitle text-slate-500">Please check your inbox for instructions on how to reset the password</p>
+                <div className="email-image">
+                    <img src={email} className="mx-auto my-4 "/>
                 </div>
-                <button class="primary-button login-button bg-[#ACD9B2] p-2 w-1/2 rounded text-white hover:bg-green-600">Login</button>
-                <p class="resend">
-                    <span>Didn't receive the email?</span>
-                    <a href="/">Resend</a>
+                <button className="primary-button login-button font-bold bg-[#ACD9B2] p-2 w-3/4  md:w-1/2 rounded text-white hover:bg-green-600">Login</button>
+                <p className="resend mt-5 text-sm">
+                    <span>Didn't receive the email? </span>
+                    <a className='text-[#ACD9B2] hover:text-green-500 font-bold' href="/">Resend</a>
                 </p>
             </div>
         </div>

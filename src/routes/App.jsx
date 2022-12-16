@@ -7,7 +7,7 @@ import NotFound from '../pages/NotFound';
 
 const App = () =>{
     return (
-       <BrowserRouter>
+        <BrowserRouter>
             <Layout>
                 <Routes>
                     <Route path='/' element={<Home />} />
@@ -16,7 +16,7 @@ const App = () =>{
                     <Route path='*' element={<NotFound />} />
                 </Routes>
             </Layout>
-       </BrowserRouter>
+        </BrowserRouter>
     );
 }
 
