@@ -36,10 +36,11 @@ const Header = () => {
 
             <div className="navbar-right items-center flex max-[640px]:hidden">
                 <ul className='flex gap-3'>
-                    <li className="navbar-email ">platzi@example.com</li>
+                    <li className="navbar-email hover:text-slate-500 hover:cursor-pointer">platzi@example.com</li>
                     <li className="navbar-shopping-cart">
-                        <img src={ shopping_cart } alt="shopping cart relative"/ >
-                        <div className='absolute text-xs top-5 right-5 bg-green-300 rounded-full p-2 w-6 h-6 flex items-center justify-center'>2</div>
+                        <img src={ shopping_cart } alt="shopping cart relative" className='hover:cursor-pointer' />
+                        <div className='absolute  top-7 right-6 bg-green-300 animate-ping rounded-full p-2 w-2 h-2'></div>
+                        <div className='absolute  top-7 right-6 bg-green-300 rounded-full p-2 w-2 h-2'></div>
                     </li>
                 </ul>
             </div>

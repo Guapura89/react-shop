@@ -6,7 +6,7 @@ const product = 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpe
 const ProductCard = () => {
     return (
         <div className="product-card">
-            <img src={ product } alt="Product image" className='rounded-lg'/>
+            <img src={ product } alt="Product image" className='rounded-[25px]'/>
             <div className="product-info flex justify-between items-center p-2">
                 <div>
                     <p className='font-bold'>$120,00</p>
