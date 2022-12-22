@@ -1,7 +1,8 @@
 // Images
 import Add from '../assets/icons/bt_add_to_cart.svg';
 const product = 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
- 
+
+import Header from './Header';
 
 const ProductCard = () => {
     return (
@@ -13,7 +14,7 @@ const ProductCard = () => {
                     <p className='font-light'>Bike</p>
                 </div>
                 <figure>
-                    <img src={ Add } alt="Add to cart" className='hover:cursor-pointer' />
+                    <img onClick={() => Header.setUserName('Hello')} src={ Add } alt="Add to cart" className='hover:cursor-pointer' />
                 </figure>
             </div>
         </div>

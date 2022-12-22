@@ -4,10 +4,13 @@ import logo from '../assets/logos/logo_yard_sale.svg';
 import shopping_cart from '../assets/icons/icon_shopping_cart.svg';
 
 import '../styles/header.css';
+import { useState } from 'react';
 
 const Header = () => {
+    const [userName, setUserName] = useState('carlos@platzi.com');
+    const [hi, setHi] = useState('txttxtxt');
     return (
-        <nav className='flex justify-between w-92 mx-auto px-8 h-[100px] min-w-[280px]'>
+        <nav className='flex justify-between w-92 mx-auto px-8 h-[100px] min-w-[280px] 2xl:w-[80%]'>
             
             <div className="navbar-left flex gap-12 items-center">
                 <img src={ logo } alt="logo" className="logo w-[130px]" />
@@ -36,11 +39,14 @@ const Header = () => {
 
             <div className="navbar-right items-center flex max-[640px]:hidden">
                 <ul className='flex gap-3'>
-                    <li className="navbar-email hover:text-slate-500 hover:cursor-pointer">platzi@example.com</li>
+                    <li className="navbar-email hover:text-slate-500 hover:cursor-pointer">{ userName } { hi }</li>
                     <li className="navbar-shopping-cart">
-                        <img src={ shopping_cart } alt="shopping cart relative" className='hover:cursor-pointer' />
-                        <div className='absolute  top-7 right-6 bg-green-300 animate-ping rounded-full p-2 w-2 h-2'></div>
-                        <div className='absolute  top-7 right-6 bg-green-300 rounded-full p-2 w-2 h-2'></div>
+                        <div className='relative'>
+                            <img src={ shopping_cart } alt="shopping cart relative" className='hover:cursor-pointer' />
+                            <div className='absolute -top-2 -right-1 bg-green-300 animate-ping rounded-full p-2 w-2 h-2'></div>
+                            <div className='absolute -top-2 -right-1 bg-green-300 rounded-full p-2 w-2 h-2'></div>
+                        </div>
+                        
                     </li>
                 </ul>
             </div>
