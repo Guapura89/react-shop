@@ -4,7 +4,7 @@ import email from '../assets/icons/email.svg'
 
 const RecoveryPassword = () => {
     return (
-        <div className="login w-full h-screen grid place-items-center text-center">
+        <div className="recovery-pass w-full h-screen grid place-items-center text-center">
             <div className="form-container w-48 sm:w-1/4">
                 <img src={logo} alt="logo" className="logo mx-auto my-3 w-full sm:w-1/2" />
                 <h1 className="title font-bold mb-1">Email has been sent!</h1>
