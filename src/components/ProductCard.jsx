@@ -15,7 +15,7 @@ const ProductCard = () => {
                     <p className='font-light'>Bike</p>
                 </div>
                 <figure>
-                    <img onClick={() => Header.setUserName('Hello')} src={ Add } alt="Add to cart" className='hover:cursor-pointer' />
+                    <img src={ Add } alt="Add to cart" className='hover:cursor-pointer' />
                 </figure>
             </div>
         </div>

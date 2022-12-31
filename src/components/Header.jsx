@@ -3,7 +3,6 @@ import menu_logo from '../assets/icons/icon_menu.svg';
 import logo from '../assets/logos/logo_yard_sale.svg';
 import shopping_cart from '../assets/icons/icon_shopping_cart.svg';
 
-import '../styles/header.css';
 import { useState } from 'react';
 
 const Header = () => {
@@ -39,7 +38,7 @@ const Header = () => {
 
             <div className="navbar-right items-center flex max-[640px]:hidden">
                 <ul className='flex gap-3'>
-                    <li className="navbar-email hover:text-slate-500 hover:cursor-pointer">{ userName } { hi }</li>
+                    <li className="navbar-email hover:text-slate-500 hover:cursor-pointer" onClick={() => setUserName('Hello')}>{ userName } { hi }</li>
                     <li className="navbar-shopping-cart">
                         <div className='relative'>
                             <img src={ shopping_cart } alt="shopping cart relative" className='hover:cursor-pointer' />

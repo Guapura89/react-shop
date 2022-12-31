@@ -1,7 +1,7 @@
-import Header from "../components/Header";
 import Products from "../containers/Products";
 import SearchProduct from "../components/SearchProduct";
-import ProductInfo from "../components/ProductInfo";
+import ProductInfo from "../containers/ProductInfo";
+import ShopingCart from "../containers/ShopingCart";
 
 
 const Home = () => {
@@ -11,6 +11,7 @@ const Home = () => {
                 <SearchProduct/>
                 <Products />
                 <ProductInfo />
+                <ShopingCart />
             </div>
         </div>
     );
