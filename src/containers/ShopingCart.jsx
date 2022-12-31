@@ -9,7 +9,7 @@ const ShopingCart = () => {
             <div className='w-4/5 mx-auto'>
                 <div className="title-container flex gap-4 hover:cursor-pointer">
                     <img src={ flechita } alt="arrow" className='-rotate-180' />
-                    <p class="title font-bold">My order</p>
+                    <p className="title font-bold">My order</p>
                 </div>
 
                 <div className=" my-16">
@@ -24,7 +24,7 @@ const ShopingCart = () => {
                         <p>Total</p>
                         <p>$ 560.00</p>
                     </div>
-                    <button class="primary-button add-to-cart-button bg-[#ACD9B2] flex p-2 my-4 text-white font-bold items-center border-2 border-[#ACD9B2] justify-center gap-2 hover:bg-white hover:text-[#ACD9B2] rounded-lg w-4/5 mx-auto">  
+                    <button className="primary-button add-to-cart-button bg-[#ACD9B2] flex p-2 my-4 text-white font-bold items-center border-2 border-[#ACD9B2] justify-center gap-2 hover:bg-white hover:text-[#ACD9B2] rounded-lg w-4/5 mx-auto">  
                         Checkout
                     </button>
                 </div>
