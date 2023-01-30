@@ -11,6 +11,14 @@ module.exports = {
   mode: "development",
   resolve: {
     extensions: [".js", ".jsx"],
+    alias: {
+      "@icons": path.resolve(__dirname, "src/assets/icons/"),
+      "@images": path.resolve(__dirname, "src/assets/images/"),
+      "@logos": path.resolve(__dirname, "src/assets/logos/"),
+      "@components": path.resolve(__dirname, "src/components/"),
+      "@containers": path.resolve(__dirname, "src/containers/"),
+      "@pages": path.resolve(__dirname, "src/pages/"),
+    },
   },
   module: {
     rules: [

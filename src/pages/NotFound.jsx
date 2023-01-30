@@ -1,4 +1,4 @@
-import logo from'../assets/images/broken-bot.png';
+import logo from'@images/broken-bot.png';
 import { useNavigate } from 'react-router-dom';
 
 const NotFound = () => {

@@ -1,5 +1,5 @@
 //Images
-import close from '../assets/icons/icon_close.png';
+import close from '@icons/icon_close.png';
 
 const CartItem = () => {
     return (

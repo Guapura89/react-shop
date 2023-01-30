@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from '../containers/Layout';
-import Login from '../pages/Login';
-import RecoveryPassword from '../pages/RecoveryPassword';
-import Home from '../pages/Home';
-import NotFound from '../pages/NotFound';
-import EditAccount from '../pages/EditAccount';
-import MyOrder from '../pages/MyOrder';
-import MyOrders from '../pages/MyOrders';
+import Layout from '@containers/Layout';
+import Login from '@pages/Login';
+import RecoveryPassword from '@pages/RecoveryPassword';
+import Home from '@pages/Home';
+import NotFound from '@pages/NotFound';
+import EditAccount from '@pages/EditAccount';
+import MyOrder from '@pages/MyOrder';
+import MyOrders from '@pages/MyOrders';
 
 const App = () =>{
     return (

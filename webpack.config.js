@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin").CleanWebpackPlugin;
 const CssMinizerWebpackPlugin = require("css-minimizer-webpack-plugin");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 
@@ -15,6 +15,14 @@ module.exports = {
   mode: "production",
   resolve: {
     extensions: [".js", ".jsx"],
+    alias: {
+      "@icons": path.resolve(__dirname, "src/assets/icons/"),
+      "@images": path.resolve(__dirname, "src/assets/images/"),
+      "@logos": path.resolve(__dirname, "src/assets/logos/"),
+      "@components": path.resolve(__dirname, "src/components/"),
+      "@containers": path.resolve(__dirname, "src/containers/"),
+      "@pages": path.resolve(__dirname, "src/pages/"),
+    },
   },
   module: {
     rules: [

@@ -1,6 +1,6 @@
 // Images
-import logo from '../assets/logos/logo_yard_sale.svg'
-import email from '../assets/icons/email.svg'
+import logo from '@logos/logo_yard_sale.svg'
+import email from '@icons/email.svg'
 
 const RecoveryPassword = () => {
     return (

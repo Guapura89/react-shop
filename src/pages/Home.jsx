@@ -1,7 +1,6 @@
-import Products from "../containers/Products";
-import SearchProduct from "../components/SearchProduct";
-import ProductInfo from "../containers/ProductInfo";
-import ShopingCart from "../containers/ShopingCart";
+import Products from "@containers/Products";
+import SearchProduct from "@components/SearchProduct";
+import ShopingCart from "@containers/ShopingCart";
 
 
 const Home = () => {
@@ -10,7 +9,6 @@ const Home = () => {
             <div className="home__container w-[80%] mx-auto">
                 <SearchProduct/>
                 <Products />
-                <ProductInfo />
                 <ShopingCart />
             </div>
         </div>

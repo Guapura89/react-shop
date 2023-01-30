@@ -1,5 +1,5 @@
 // Images
-import logo from '../assets/logos/logo_yard_sale.svg';
+import logo from '@logos/logo_yard_sale.svg';
 
 const Login = () => {
     return (

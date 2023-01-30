@@ -1,5 +1,5 @@
 // Images 
-import flechita from '../assets/icons/flechita.svg';
+import flechita from '@icons/flechita.svg';
 
 const OrderItem = () => {
     return (

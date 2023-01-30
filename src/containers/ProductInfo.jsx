@@ -1,10 +1,10 @@
 // Images
-import close from '../assets/icons/icon_close.png';
-import addToCart from '../assets/icons/bt_add_to_cart.svg';
+import close from '@icons/icon_close.png';
+import addToCart from '@icons/bt_add_to_cart.svg';
 
 const ProductInfo = (props) => {
     return (
-        <aside className="product-detail absolute right-0 top-0 w-1/4 bg-white hidden">
+        <aside className="product-detail absolute right-0 top-0 w-1/4 bg-white">
             <div className='absolute top-2 left-2 bg-white w-[40px] h-[40px] rounded-full grid place-items-center'>
                 <img src={ close } alt="close" className='w-1/2'/>
             </div>

@@ -1,4 +1,4 @@
-import OrderItem from "../components/OrderItem";
+import OrderItem from "@components/OrderItem";
 
 const MyOrders = () => {
     return (

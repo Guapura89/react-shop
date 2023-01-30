@@ -1,7 +1,7 @@
 //Images
-import flechita from '../assets/icons/flechita.svg';
+import flechita from '@icons/flechita.svg';
 
-import CartItem from "../components/CartItem";
+import CartItem from "@components/CartItem";
 
 const ShopingCart = () => {
     return (
