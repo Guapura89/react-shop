@@ -9,7 +9,7 @@ const Home = () => {
             <div className="home__container w-[80%] mx-auto">
                 <SearchProduct/>
                 <Products />
-                <ShopingCart />
+                {/* <ShopingCart /> */}
             </div>
         </div>
     );

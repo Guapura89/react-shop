@@ -5,7 +5,7 @@ import CartItem from "@components/CartItem";
 
 const ShopingCart = () => {
     return (
-        <aside className="product-detail absolute right-0 top-0 w-[450px] bg-white hidden">
+        <aside className="product-detail absolute right-0 top-24 w-[450px] z-10 bg-white">
             <div className='w-4/5 mx-auto'>
                 <div className="title-container flex gap-4 hover:cursor-pointer">
                     <img src={ flechita } alt="arrow" className='-rotate-180' />

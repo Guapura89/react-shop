@@ -5,11 +5,13 @@ import shopping_cart from '@icons/icon_shopping_cart.svg';
 import arrow from '@icons/flechita.svg';
 
 import Menu from './Menu';
+import ShopingCart from '@containers/ShopingCart.jsx'
 import { useState } from 'react';
 
 const Header = () => {
     const [userName, setUserName] = useState( 'Carlos Sanchez' );
     const [display, setDisplay] = useState(false);
+    const [hideCart, setHideCart] = useState(false);
     return (
         <nav className='flex justify-between w-92 mx-auto px-8 h-[100px] min-w-[280px] 2xl:w-[80%]'>
             
@@ -49,13 +51,13 @@ const Header = () => {
                         {/* If display hook is true, menu will apear */}
                         { display && <Menu /> }
                     </li>
-                    <li className="navbar-shopping-cart">
-                        <div className='relative'>
-                            <img src={ shopping_cart } alt="shopping cart relative" className='hover:cursor-pointer' />
+                    <li className="navbar-shopping-cart" >
+                        <div className='relative hover:cursor-pointer' onClick={() => setHideCart( !hideCart )}>
+                            <img src={ shopping_cart } alt="shopping cart relative" />
                             <div className='absolute -top-2 -right-1 bg-green-300 animate-ping rounded-full p-2 w-2 h-2'></div>
                             <div className='absolute -top-2 -right-1 bg-green-300 rounded-full p-2 w-2 h-2'></div>
                         </div>
-                        
+                        { hideCart && <ShopingCart /> }
                     </li>
                 </ul>
             </div>
