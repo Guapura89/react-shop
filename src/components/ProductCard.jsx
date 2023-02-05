@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ProductInfo from '../containers/ProductInfo';
 
 // Images
 import Add from '@icons/bt_add_to_cart.svg';
@@ -7,11 +8,12 @@ import Added from '@icons/bt_added_to_cart.svg';
 
 const ProductCard = ({product}) => {
     const [cart, setCart] = useState(true);
+    const [handleClick, setHancleClick] = useState(false);
 
     return (
         <div className="product-card">
             
-            <img src={ product.images[0] } alt={ product.title } className='rounded-[25px] hover:cursor-pointer' />
+            <img src={ product.images[0] } alt={ product.title } className='rounded-[25px] hover:cursor-pointer' onClickCapture={() => setHancleClick(!handleClick)} />
             <div className="product-info flex justify-between items-center p-2">
                 <div>
                     <p className='font-bold'>${ product.price }</p>
@@ -22,6 +24,8 @@ const ProductCard = ({product}) => {
                     <img style={{ display: cart ? 'none' : 'block' }} src={ Added } alt="Add to cart" className='hover:cursor-pointer' />
                 </figure>
             </div>
+
+            { handleClick ? <ProductInfo image={product.images[0]} price={product.price} title={product.title} description={product.description} /> : null}
         </div>
     );
 }
