@@ -1,5 +1,5 @@
 import Card from '@components/ProductCard.jsx';
-import useGetProducts from '../hooks/useGetProducts';
+import useGetProducts from '@hooks/useGetProducts';
 
 const API = 'https://api.escuelajs.co/api/v1/products?limit=12&offset=1';
 
