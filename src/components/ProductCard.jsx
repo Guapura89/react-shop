@@ -8,7 +8,7 @@ import Added from '@icons/bt_added_to_cart.svg';
 
 
 const ProductCard = ({product}) => {
-    const { addToCart } = useContext(AppContext);
+    const { addToCart, removeFromCart } = useContext(AppContext);
 
     const [cart, setCart] = useState(true);
     const [handleClick, setHancleClick] = useState(false);
@@ -16,6 +16,11 @@ const ProductCard = ({product}) => {
     const addItem = (item) => {
         setCart(!cart);
         addToCart(item)
+    }
+
+    const handleRemove = (product) => {
+        setCart(!cart);
+        removeFromCart(product);
     }
 
     return (
@@ -27,9 +32,9 @@ const ProductCard = ({product}) => {
                     <p className='font-bold'>${ product.price }</p>
                     <p className='font-light'>{ product.title }</p>
                 </div>
-                <figure className='flex items-center justify-center' onClick={() => addItem(product)} >
-                    <img style={{ display: cart ? 'block' : 'none' }} src={ Add } alt="Add to cart" className='hover:cursor-pointer' />
-                    <img style={{ display: cart ? 'none' : 'block' }} src={ Added } alt="Add to cart" className='hover:cursor-pointer' />
+                <figure className='flex items-center justify-center'  >
+                    <img style={{ display: cart ? 'block' : 'none' }} onClick={() => addItem(product)} src={ Add } alt="Add to cart" className='hover:cursor-pointer' />
+                    <img style={{ display: cart ? 'none' : 'block' }} onClick={() => handleRemove(product)} src={ Added } alt="Add to cart" className='hover:cursor-pointer' />
                 </figure>
             </div>
 
